@@ -1,0 +1,684 @@
+--Made by : TRUONG
+
+local Z = Instance.new("ScreenGui")
+local X = Instance.new("Frame")
+local F = Instance.new("UIGradient")
+local H = Instance.new("Frame")
+local U = Instance.new("UICorner")
+local S = Instance.new("Frame")
+local M = Instance.new("UICorner")
+local J = Instance.new("UIGradient")
+Z.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Z.Name = "Z"
+Z.Parent = game:GetService("CoreGui")
+X.BorderSizePixel = 0
+X.Size = UDim2.new(0, 350, 0, 170)
+X.BorderColor3 = Color3.fromRGB(255, 255, 255)
+X.Name = "X"
+X.Position = UDim2.new(0.33669, 0, 0.311639, 0)
+X.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+X.Parent = Z
+local UICorner = Instance.new("UICorner")
+UICorner.Name = "UICorner"
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = X
+F.Name = "F"
+F.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(35, 35, 255)), ColorSequenceKeypoint.new(0.552677, Color3.fromRGB(130.371, 130.371, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)) }
+F.Parent = X
+H.BorderSizePixel = 0
+H.Size = UDim2.new(0, 325, 0, 24)
+H.BorderColor3 = Color3.fromRGB(0, 0, 0)
+H.Name = "H"
+H.Position = UDim2.new(0.0314286, 0, 0.805882, 0)
+H.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+H.Parent = X
+U.Name = "U"
+U.CornerRadius = UDim.new(0, 5)
+U.Parent = H
+S.BorderSizePixel = 0
+S.Size = UDim2.new(0, 0, 0, 24)
+S.BorderColor3 = Color3.fromRGB(0, 0, 0)
+S.Name = "S"
+S.Position = UDim2.new(0.0314286, 0, 0.805882, 0)
+S.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+S.Parent = X
+M.Name = "M"
+M.CornerRadius = UDim.new(0, 5)
+M.Parent = S
+J.Name = "J"
+J.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(35, 35, 255)), ColorSequenceKeypoint.new(0.552677, Color3.fromRGB(130.371, 130.371, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)) }
+J.Parent = S
+
+local B = Instance.new("Frame")
+local A = Instance.new("UICorner")
+local N = Instance.new("UIGradient")
+local NM = Instance.new("TextLabel")
+B.BorderSizePixel = 0
+B.Size = UDim2.new(0, 0, 0, 45)
+B.BorderColor3 = Color3.fromRGB(0, 0, 0)
+B.Name = "B"
+B.Position = UDim2.new(0.0298409, 0, 0.0379087, 0)
+B.ClipsDescendants = true
+B.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+B.Parent = X
+A.Name = "A"
+A.CornerRadius = UDim.new(1, 0)
+A.Parent = B
+N.Name = "N"
+N.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(35, 35, 255)), ColorSequenceKeypoint.new(0.552677, Color3.fromRGB(130.371, 130.371, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)) }
+N.Parent = B
+NM.BorderSizePixel = 0
+NM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NM.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+NM.TextSize = 14
+NM.Position = UDim2.new(0.0830769, 0, 0.0888889, 0)
+NM.Size = UDim2.new(0, 273, 0, 36)
+NM.Name = "NM"
+NM.TextColor3 = Color3.fromRGB(255, 255, 255)
+NM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NM.Text = "Wellcome To KUDO Hub"
+NM.BackgroundTransparency = 1
+NM.Parent = B
+local KL = Instance.new("TextLabel")
+local UK = Instance.new("UIGradient")
+KL.BorderSizePixel = 0
+KL.TextYAlignment = Enum.TextYAlignment.Top
+KL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KL.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+KL.TextSize = 14
+KL.ClipsDescendants = true
+KL.Position = UDim2.new(0.0314286, 0, 0.352941, 0)
+KL.Size = UDim2.new(0, 0, 0, 66)
+KL.Name = "KL"
+KL.TextColor3 = Color3.fromRGB(255, 255, 255)
+KL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KL.Text = "Description : KUDOHUB NEW"
+KL.BackgroundTransparency = 1
+KL.TextXAlignment = Enum.TextXAlignment.Left
+KL.Parent = X
+UK.Name = "UK"
+UK.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.0345423, Color3.fromRGB(130.371, 130.371, 255)), ColorSequenceKeypoint.new(0.331606, Color3.fromRGB(116.519, 143.613, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)) }
+UK.Parent = KL
+
+local TweenService = game:GetService("TweenService")
+TweenService:Create(B,TweenInfo.new(2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = UDim2.new(0, 325, 0, 45)}):Play()
+TweenService:Create(KL,TweenInfo.new(3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = UDim2.new(0, 324, 0, 66)}):Play()
+TweenService:Create(S,TweenInfo.new(5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = UDim2.new(0, 325, 0, 24)}):Play()
+wait(5)
+if S.Size == UDim2.new(0, 325, 0, 24) then
+	Z:Destroy()
+end
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/polar"))()
+local ok = library:CreateWindow("KudoHUB")
+ok:Section("Main")
+ok:Button("HITBOT",function(a)
+_G.HeadSize = 10
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+     print(a)
+end)
+
+
+
+ok:Button("AIMLOCK",function(a) local fov = 34
+    local RunService = game:GetService("RunService")
+    local UserInputService = game:GetService("UserInputService")
+    local Players = game:GetService("Players")
+    local Cam = game.Workspace.CurrentCamera
+     
+    local FOVring = Drawing.new("Circle")
+    FOVring.Visible = true
+    FOVring.Thickness = 2
+    FOVring.Color = Color3.fromRGB(255,255,255) -- White color
+    FOVring.Filled = false
+    FOVring.Radius = fov
+    FOVring.Position = Cam.ViewportSize / 2
+     
+    local function updateDrawings()
+        local camViewportSize = Cam.ViewportSize
+        FOVring.Position = camViewportSize / 2
+    end
+     
+    local function onKeyDown(input)
+        if input.KeyCode == Enum.KeyCode.Delete then
+            RunService:UnbindFromRenderStep("FOVUpdate")
+            FOVring:Remove()
+        end
+    end
+     
+    UserInputService.InputBegan:Connect(onKeyDown)
+     
+    local function lookAt(target)
+        local lookVector = (target - Cam.CFrame.Position).unit
+        local newCFrame = CFrame.new(Cam.CFrame.Position, Cam.CFrame.Position + lookVector)
+        Cam.CFrame = newCFrame
+    end
+     
+    local function getClosestPlayerInFOV(trg_part)
+        local nearest = nil
+        local last = math.huge
+        local playerMousePos = Cam.ViewportSize / 2
+     
+        for _, player in ipairs(Players:GetPlayers()) do
+            if player ~= Players.LocalPlayer then
+                local part = player.Character and player.Character:FindFirstChild(trg_part)
+                if part then
+                    local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
+                    local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
+     
+                    if distance < last and isVisible and distance < fov then
+                        last = distance
+                        nearest = player
+                    end
+                end
+            end
+        end
+     
+        return nearest
+    end
+     
+    RunService.RenderStepped:Connect(function()
+        updateDrawings()
+        local closest = getClosestPlayerInFOV("Head")
+        if closest and closest.Character:FindFirstChild("Head") then
+            lookAt(closest.Character.Head.Position)
+        end
+    end)
+print(a)
+end)
+
+
+
+
+ok:Button("EPS",function(a)loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+print(a)
+end)
+
+ok:Button("EpsV3",function(a)--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+local ESPEnabled = true
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+function createESP(playerTarget)
+    local highlight = Instance.new("Highlight")
+    highlight.Parent = playerTarget.Character
+    highlight.FillColor = Color3.fromRGB(0, 255, 255)
+    highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = "ESPLabel"
+    billboard.Adornee = playerTarget.Character:FindFirstChild("Head")
+    billboard.Size = UDim2.new(0, 200, 0, 50)
+    billboard.StudsOffset = Vector3.new(0, 3, 0)
+    billboard.AlwaysOnTop = true
+
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Parent = billboard
+    nameLabel.Size = UDim2.new(1, 0, 1, 0)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Text = playerTarget.Name
+    nameLabel.TextColor3 = Color3.new(1, 1, 1)
+    nameLabel.TextSize = 14
+    nameLabel.Font = Enum.Font.SourceSans
+
+    billboard.Parent = playerTarget.Character:FindFirstChild("Head")
+end
+
+function removeESP(playerTarget)
+    if playerTarget.Character:FindFirstChild("Highlight") then
+        playerTarget.Character.Highlight:Destroy()
+    end
+    if playerTarget.Character:FindFirstChild("Head") and playerTarget.Character.Head:FindFirstChild("ESPLabel") then
+        playerTarget.Character.Head.ESPLabel:Destroy()
+    end
+end
+
+function updateESP()
+    while ESPEnabled do
+        for _, playerTarget in pairs(game.Players:GetPlayers()) do
+            if playerTarget ~= player and playerTarget.Character and playerTarget.Character:FindFirstChild("Head") then
+                if not playerTarget.Character:FindFirstChild("Highlight") then
+                    createESP(playerTarget)
+                end
+            end
+        end
+
+        for _, playerTarget in pairs(game.Players:GetPlayers()) do
+            if not playerTarget.Character or not playerTarget.Character:FindFirstChild("Head") then
+                removeESP(playerTarget)
+            end
+        end
+
+        wait(5)
+    end
+end
+
+function teleportToPlayer(targetPlayer)
+    if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+        local targetPosition = targetPlayer.Character.HumanoidRootPart.Position + Vector3.new(0, 5, 0)
+        player.Character:SetPrimaryPartCFrame(CFrame.new(targetPosition))
+    end
+end
+
+mouse.Button1Down:Connect(function()
+    local targetPlayer = nil
+    local closestDistance = math.huge
+
+    for _, playerTarget in pairs(game.Players:GetPlayers()) do
+        if playerTarget ~= player and playerTarget.Character and playerTarget.Character:FindFirstChild("HumanoidRootPart") then
+            local screenPos, onScreen = workspace.CurrentCamera:WorldToScreenPoint(playerTarget.Character.HumanoidRootPart.Position)
+            local mousePos = Vector2.new(mouse.X, mouse.Y)
+            local distance = (mousePos - Vector2.new(screenPos.X, screenPos.Y)).magnitude
+
+            if distance < 50 and distance < closestDistance then
+                closestDistance = distance
+                targetPlayer = playerTarget
+            end
+        end
+    end
+
+    if targetPlayer then
+        teleportToPlayer(targetPlayer)
+    end
+end)
+
+function showNotification()
+    local starterGui = game:GetService("StarterGui")
+    starterGui:SetCore("SendNotification", {
+        Title = "Notification";
+        Text = "Made by thebestpersol, enjoy.";
+        Duration = 5;
+    })
+end
+
+showNotification()
+spawn(updateESP)
+print(a)
+end)
+
+
+ok:Button("EpsV2",function(a)--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--//Toggle\\--
+getgenv().Toggle = true -- This toggles the esp, turning it to false will turn it off
+getgenv().TC = false -- This toggles team check, turning it on will turn on team check
+local PlayerName = "Name" -- You can decide if you want the Player's name to be a display name which is "DisplayName", or username which is "Name"
+
+--//Variables\\--
+local P = game:GetService("Players")
+local LP = P.LocalPlayer
+
+--//Debounce\\--
+local DB = false
+
+--//Notification\\--
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Notification",
+	Text = "Best ESP by.ExluZive" ,
+	Button1 = "Shut Up",
+	Duration = math.huge
+})
+
+--//Loop\\--
+while task.wait() do
+	if not getgenv().Toggle then
+		break
+	end
+	if DB then 
+		return 
+	end
+	DB = true
+
+	pcall(function()
+		for i,v in pairs(P:GetChildren()) do
+			if v:IsA("Player") then
+				if v ~= LP then
+					if v.Character then
+
+						local pos = math.floor(((LP.Character:FindFirstChild("HumanoidRootPart")).Position - (v.Character:FindFirstChild("HumanoidRootPart")).Position).magnitude)
+						-- Credits to Infinite Yield for this part (pos) ^^^^^^
+
+						if v.Character:FindFirstChild("Totally NOT Esp") == nil and v.Character:FindFirstChild("Icon") == nil and getgenv().TC == false then
+							--//ESP-Highlight\\--
+							local ESP = Instance.new("Highlight", v.Character)
+
+							ESP.Name = "Totally NOT Esp"
+							ESP.Adornee = v.Character
+							ESP.Archivable = true
+							ESP.Enabled = true
+							ESP.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+							ESP.FillColor = v.TeamColor.Color
+							ESP.FillTransparency = 0.5
+							ESP.OutlineColor = Color3.fromRGB(255, 255, 255)
+							ESP.OutlineTransparency = 0
+
+							--//ESP-Text\\--
+							local Icon = Instance.new("BillboardGui", v.Character)
+							local ESPText = Instance.new("TextLabel")
+
+							Icon.Name = "Icon"
+							Icon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+							Icon.Active = true
+							Icon.AlwaysOnTop = true
+							Icon.ExtentsOffset = Vector3.new(0, 1, 0)
+							Icon.LightInfluence = 1.000
+							Icon.Size = UDim2.new(0, 800, 0, 50)
+
+							ESPText.Name = "ESP Text"
+							ESPText.Parent = Icon
+							ESPText.BackgroundColor3 = v.TeamColor.Color
+							ESPText.BackgroundTransparency = 1.000
+							ESPText.Size = UDim2.new(0, 800, 0, 50)
+							ESPText.Font = Enum.Font.SciFi
+							ESPText.Text = v[PlayerName].." | Distance: "..pos
+							ESPText.TextColor3 = v.TeamColor.Color
+							ESPText.TextSize = 10.800
+							ESPText.TextWrapped = true
+						else
+							if v.TeamColor ~= LP.TeamColor and v.Character:FindFirstChild("Totally NOT Esp") == nil and v.Character:FindFirstChild("Icon") == nil and getgenv().TC == true then
+								--//ESP-Highlight\\--
+								local ESP = Instance.new("Highlight", v.Character)
+
+								ESP.Name = "Totally NOT Esp"
+								ESP.Adornee = v.Character
+								ESP.Archivable = true
+								ESP.Enabled = true
+								ESP.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+								ESP.FillColor = v.TeamColor.Color
+								ESP.FillTransparency = 0.5
+								ESP.OutlineColor = Color3.fromRGB(255, 255, 255)
+								ESP.OutlineTransparency = 0
+
+								--//ESP-Text\\--
+								local Icon = Instance.new("BillboardGui", v.Character)
+								local ESPText = Instance.new("TextLabel")
+
+								Icon.Name = "Icon"
+								Icon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+								Icon.Active = true
+								Icon.AlwaysOnTop = true
+								Icon.ExtentsOffset = Vector3.new(0, 1, 0)
+								Icon.LightInfluence = 1.000
+								Icon.Size = UDim2.new(0, 800, 0, 50)
+
+								ESPText.Name = "ESP Text"
+								ESPText.Parent = Icon
+								ESPText.BackgroundColor3 = v.TeamColor.Color
+								ESPText.BackgroundTransparency = 1.000
+								ESPText.Size = UDim2.new(0, 800, 0, 50)
+								ESPText.Font = Enum.Font.SciFi
+								ESPText.Text = v[PlayerName].." | Distance: "..pos
+								ESPText.TextColor3 = v.TeamColor.Color
+								ESPText.TextSize = 10.800
+								ESPText.TextWrapped = true
+							else
+								if not v.Character:FindFirstChild("Totally NOT Esp").FillColor == v.TeamColor.Color and not v.Character:FindFirstChild("Icon").TextColor3 == v.TeamColor.Color then
+									v.Character:FindFirstChild("Totally NOT Esp").FillColor = v.TeamColor.Color
+									v.Character:FindFirstChild("Icon").TextColor3 = v.TeamColor.Color
+								else
+									if v.Character:FindFirstChild("Totally NOT Esp").Enabled == false and v.Character:FindFirstChild("Icon").Enabled == false then
+										v.Character:FindFirstChild("Totally NOT Esp").Enabled = true
+										v.Character:FindFirstChild("Icon").Enabled = true
+									else
+										if v.Character:FindFirstChild("Icon") then
+											v.Character:FindFirstChild("Icon")["ESP Text"].Text = v[PlayerName].." | Distance: "..pos
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+
+	wait()
+
+	DB = false
+end
+print(a)
+end)
+
+
+ok:Button("EPS GREEN",function(a)
+    local FillColor = Color3.fromRGB(0,255,0)
+local DepthMode = "AlwaysOnTop"
+local FillTransparency = 0.5
+local OutlineColor = Color3.fromRGB(0,255,0)
+local OutlineTransparency = 0
+
+local CoreGui = game:FindService("CoreGui")
+local Players = game:FindService("Players")
+local lp = Players.LocalPlayer
+local connections = {}
+
+local Storage = Instance.new("Folder")
+Storage.Parent = CoreGui
+Storage.Name = "Highlight_Storage"
+
+local function Highlight(plr)
+    local Highlight = Instance.new("Highlight")
+    Highlight.Name = plr.Name
+    Highlight.FillColor = FillColor
+    Highlight.DepthMode = DepthMode
+    Highlight.FillTransparency = FillTransparency
+    Highlight.OutlineColor = OutlineColor
+    Highlight.OutlineTransparency = 0
+    Highlight.Parent = Storage
+    
+    local plrchar = plr.Character
+    if plrchar then
+        Highlight.Adornee = plrchar
+    end
+
+    connections[plr] = plr.CharacterAdded:Connect(function(char)
+        Highlight.Adornee = char
+    end)
+end
+
+Players.PlayerAdded:Connect(Highlight)
+for i,v in next, Players:GetPlayers() do
+    Highlight(v)
+end
+
+Players.PlayerRemoving:Connect(function(plr)
+    local plrname = plr.Name
+    if Storage[plrname] then
+        Storage[plrname]:Destroy()
+    end
+    if connections[plr] then
+        connections[plr]:Disconnect()
+    end
+end)
+print(a)
+end)
+
+
+ok:Button("HITBOTV2",function(a)
+    _G.HeadSize = 18
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+print(a)
+end)
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+local no = library:CreateWindow("KudoHUB")
+no:Section("Main2")
+
+no:Button("Fpsboot",function(a)
+    local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 65.
+    local g = game
+    local w = g.Workspace
+    local l = g.Lighting
+    local t = w.Terrain
+    t.WaterWaveSize = 0
+    t.WaterWaveSpeed = 0
+    t.WaterReflectance = 0
+    t.WaterTransparency = 0
+    l.GlobalShadows = false
+    l.FogEnd = 9e9
+    l.Brightness = 0
+    settings().Rendering.QualityLevel = "Level01"
+    for i, v in pairs(g:GetDescendants()) do
+        if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+            v.Lifetime = NumberRange.new(0)
+        elseif v:IsA("Explosion") then
+            v.BlastPressure = 1
+            v.BlastRadius = 1
+        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+            v.Enabled = false
+        elseif v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+            v.TextureID = 10385902758728957
+        end
+    end
+    for i, e in pairs(l:GetChildren()) do
+        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+            e.Enabled = false
+        end
+    end
+    print(a)
+end)
+
+
+no:Button("SpideMan",function(a)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/truongghh/Goodboymm2/main/WallHack"))()  
+    print(a)
+end)
+
+no:Button("FullBRIGHT2",function(a)
+    game:GetService("Lighting").Brightness = 2
+    game:GetService("Lighting").ClockTime = 14
+    game:GetService("Lighting").FogEnd = 100000
+    game:GetService("Lighting").GlobalShadows = false
+    game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+print(a)
+end)
+
+no:Button("EPS NAME",function(a)
+        local esp_settings = { 
+            textsize = 27,
+            colour = 255,0,0
+        }
+         
+        local gui = Instance.new("BillboardGui")
+        local esp = Instance.new("TextLabel",gui)
+         
+         
+         
+        gui.Name = "Cracked esp";
+        gui.ResetOnSpawn = false
+        gui.AlwaysOnTop = true;
+        gui.LightInfluence = 0;
+        gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+        esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+        esp.Text = ""
+        esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+        esp.BorderSizePixel = 4;
+        esp.BorderColor3 = Color3.new(esp_settings.colour)
+        esp.BorderSizePixel = 0
+        esp.Font = "GothamSemibold"
+        esp.TextSize = esp_settings.textsize
+        esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+         
+        game:GetService("RunService").RenderStepped:Connect(function()
+            for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+                if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then
+                    esp.Text = "["..v.Name.."]"
+                    gui:Clone().Parent = v.Character.Head
+            end
+        end
+        end)
+
+        print(a)
+    end)
+
+    no:Button("INFINITE JUMP",function(a)
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+            print(a)
+        end)
+
+    no:Button("FLYV3",function(a)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    print(a)
+end)
+
+    
+
+    no:Button("ANTI AFK",function(a)
+        local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by ur mom "
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
+print(a)
+end)
