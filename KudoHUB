@@ -591,8 +591,16 @@ no:Button("Fpsboot",function(a)
 end)
 
 
-no:Button("SpideMan",function(a)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/truongghh/Goodboymm2/main/WallHack"))()  
+no:Button("FullBIGHT1",function(a)
+    function dofullbright()
+        Light.Ambient = Color3.new(1, 1, 1)
+        Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+        Light.ColorShift_Top = Color3.new(1, 1, 1)
+        end
+        
+        dofullbright()
+        
+        Light.LightingChanged:Connect(dofullbright)  
     print(a)
 end)
 
